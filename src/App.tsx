@@ -42,6 +42,7 @@ const ElementCard: FC<ElementCardProp> = (elemProp: ElementCardProp) => {
         <div className = "ElementCard" style = {{
                 gridColumn: elem.xpos,
                 gridRow: elem.ypos,
+                background: "red",
             }}
             onMouseOver = {() => elemProp.setElem(elem.number - 1)}
         >
